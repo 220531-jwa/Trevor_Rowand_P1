@@ -1,0 +1,3 @@
+2022-06-28 11:25:49 INFO  UserController:27 - Session Attribute Set for User dev.rowand.models.User@12a2578f
+2022-06-28 13:56:46 INFO  UserController:30 - GET request recieved at endpoint /users
+2022-06-28 14:28:51 INFO  UserController:30 - GET request recieved at endpoint /users
