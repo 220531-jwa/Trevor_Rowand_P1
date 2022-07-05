@@ -20,11 +20,12 @@ public class FormDAO {
 		String sql = "insert into forms values (default, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
 		try(Connection conn = cu.getConnection()){
 			PreparedStatement ps = conn.prepareStatement(sql);
-			ps.setString(1, f.getFormDate());
-			ps.setString(2, f.getFormTime());
-			ps.setString(3, f.getFormLocation());
-			ps.setString(4, f.getDescription());
-			ps.setFloat(5, f.getReimburse_rate());
+			ps.setInt(1, f.getReim_id());
+			ps.setString(2, f.getFormDate());
+			ps.setString(3, f.getFormTime());
+			ps.setString(4, f.getFormLocation());
+			ps.setString(5, f.getDescription());
+			ps.setFloat(6, f.getReimburse_rate());
 			ps.setFloat(7, f.getCost());
 			ps.setString(8, f.getGradingFormat());
 			ps.setString(9, f.getTypeOfEvent());
@@ -36,6 +37,7 @@ public class FormDAO {
 			if (rs.next()) {
 				return new Form(
 						rs.getInt("id"),
+						rs.getInt("reim_id"),
 						rs.getString("formDate"),
 						rs.getString("formTime"),
 						rs.getString("formLocation"),
@@ -70,6 +72,7 @@ public class FormDAO {
 			
 			while(rs.next()) {
 			int id = rs.getInt("id");
+			int reim_id = rs.getInt("reim_id");
 			String formDate = rs.getString("formDate");
 			String formTime = rs.getString("formTime");
 			String formLocal = rs.getString("formLocation");
@@ -81,7 +84,7 @@ public class FormDAO {
 			String justification = rs.getString("justification");
 			String status = rs.getString("status");
 			
-			Form f = new Form(id, formDate, formTime, formLocal, descript, rate, cost, gradingFormat, typeOfEvent, justification, status);
+			Form f = new Form(id, reim_id, formDate, formTime, formLocal, descript, rate, cost, gradingFormat, typeOfEvent, justification, status);
 			
 			forms.add(f);
 			}
@@ -107,6 +110,7 @@ public class FormDAO {
 			if(rs.next()) {
 				return new Form(
 						rs.getInt("id"),
+						rs.getInt("reim_id"),
 						rs.getString("formDate"),
 						rs.getString("formTime"),
 						rs.getString("formLocation"),
@@ -137,6 +141,7 @@ String sql = "select * from forms where id = ?";
 			if(rs.next()) {
 				return new Form(
 						rs.getInt("id"),
+						rs.getInt("reim_id"),
 						rs.getString("formDate"),
 						rs.getString("formTime"),
 						rs.getString("formLocation"),
@@ -157,6 +162,37 @@ String sql = "select * from forms where id = ?";
 		
 		return null;
 		
+	}
+
+	public Object AddGradeorPres(int id, String gradingFormat) {
+		// TODO Auto-generated method stub
+		String sql = "update forms set gradingFormat = ? where id = ?";
+		try (Connection conn = cu.getConnection()) {
+			PreparedStatement ps = conn.prepareStatement(sql);
+			ps.setString(1, gradingFormat);
+			ps.setInt(2, id);
+			ResultSet rs = ps.executeQuery();
+			if(rs.next()) {
+				return new Form(
+						rs.getInt("id"),
+						rs.getInt("reim_id"),
+						rs.getString("formDate"),
+						rs.getString("formTime"),
+						rs.getString("formLocation"),
+						rs.getString("description"),
+						rs.getFloat("reimburse_rate"),
+						rs.getFloat("cost"),
+						rs.getString("gradingFormat"),
+						rs.getString("typeOfEvent"),
+						rs.getString("justification"),
+						rs.getString("status")	
+				);
+			}
+			
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return null;
 	}
 		
 		

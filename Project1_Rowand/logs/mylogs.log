@@ -1,3 +1,116 @@
 2022-06-28 11:25:49 INFO  UserController:27 - Session Attribute Set for User dev.rowand.models.User@12a2578f
 2022-06-28 13:56:46 INFO  UserController:30 - GET request recieved at endpoint /users
 2022-06-28 14:28:51 INFO  UserController:30 - GET request recieved at endpoint /users
+2022-07-02 14:17:23 INFO  UserController:27 - Session Attribute Set for User null
+2022-07-02 14:19:38 INFO  UserController:27 - Session Attribute Set for User dev.rowand.models.User@75ba9c43
+2022-07-02 14:32:37 INFO  UserController:27 - Session Attribute Set for User dev.rowand.models.User@6458286d
+2022-07-03 11:11:27 INFO  UserController:27 - Session Attribute Set for User dev.rowand.models.User@1c76a3c4
+2022-07-03 11:33:35 INFO  UserController:30 - GET request recieved at endpoint /users
+2022-07-03 11:36:58 INFO  UserController:27 - Session Attribute Set for User dev.rowand.models.User@43a9df03
+2022-07-03 11:37:12 INFO  UserController:30 - GET request recieved at endpoint /users
+2022-07-03 17:57:25 INFO  UserController:30 - GET request recieved at endpoint /users
+2022-07-04 00:44:50 INFO  UserController:27 - Session Attribute Set for User dev.rowand.models.User@46761743
+2022-07-04 00:45:58 INFO  UserController:30 - GET request recieved at endpoint /users
+2022-07-04 01:18:20 INFO  UserController:30 - GET request recieved at endpoint /users
+2022-07-04 01:20:12 INFO  UserController:30 - GET request recieved at endpoint /users
+2022-07-04 01:33:51 INFO  UserController:30 - GET request recieved at endpoint /users
+2022-07-04 01:46:20 INFO  UserController:30 - GET request recieved at endpoint /users
+2022-07-04 01:46:29 INFO  UserController:30 - GET request recieved at endpoint /users
+2022-07-04 01:46:30 INFO  UserController:30 - GET request recieved at endpoint /users
+2022-07-04 11:31:00 INFO  UserController:30 - GET request recieved at endpoint /users
+2022-07-04 11:32:08 INFO  UserController:30 - GET request recieved at endpoint /users
+2022-07-04 11:32:37 INFO  UserController:30 - GET request recieved at endpoint /users
+2022-07-04 11:33:52 INFO  UserController:30 - GET request recieved at endpoint /users
+2022-07-04 11:37:51 INFO  UserController:27 - Session Attribute Set for User null
+2022-07-04 11:38:43 INFO  UserController:27 - Session Attribute Set for User dev.rowand.models.User@e4d3f2f
+2022-07-04 11:39:19 INFO  UserController:30 - GET request recieved at endpoint /users
+2022-07-04 12:28:19 INFO  UserController:27 - Session Attribute Set for User dev.rowand.models.User@4a864f0a
+2022-07-04 15:43:14 INFO  UserController:35 - GET request recieved at endpoint /users
+2022-07-04 15:46:46 INFO  UserController:35 - GET request recieved at endpoint /users
+2022-07-04 15:48:56 INFO  UserController:35 - GET request recieved at endpoint /users
+2022-07-04 15:52:32 INFO  UserController:35 - GET request recieved at endpoint /users
+2022-07-04 16:07:36 INFO  UserController:36 - GET request recieved at endpoint /users
+2022-07-04 16:08:19 INFO  UserController:36 - GET request recieved at endpoint /users
+2022-07-04 16:08:38 INFO  UserController:36 - GET request recieved at endpoint /users
+2022-07-04 16:30:55 INFO  UserController:36 - GET request recieved at endpoint /users
+2022-07-04 16:32:06 INFO  UserController:36 - GET request recieved at endpoint /users
+2022-07-04 16:38:41 INFO  UserController:36 - GET request recieved at endpoint /users
+2022-07-04 16:43:15 INFO  UserController:36 - GET request recieved at endpoint /users
+2022-07-04 16:48:46 INFO  UserController:36 - GET request recieved at endpoint /users
+2022-07-04 16:55:53 INFO  UserController:36 - GET request recieved at endpoint /users
+2022-07-04 16:58:59 INFO  UserController:36 - GET request recieved at endpoint /users
+2022-07-04 17:03:25 INFO  UserController:36 - GET request recieved at endpoint /users
+2022-07-04 17:09:26 INFO  UserController:36 - GET request recieved at endpoint /users
+2022-07-04 17:15:08 INFO  UserController:36 - GET request recieved at endpoint /users
+2022-07-04 17:15:14 INFO  UserController:36 - GET request recieved at endpoint /users
+2022-07-04 17:17:36 INFO  UserController:36 - GET request recieved at endpoint /users
+2022-07-04 17:19:57 INFO  UserController:36 - GET request recieved at endpoint /users
+2022-07-04 17:21:57 INFO  UserController:36 - GET request recieved at endpoint /users
+2022-07-04 17:27:29 INFO  UserController:36 - GET request recieved at endpoint /users
+2022-07-04 17:35:55 INFO  UserController:36 - GET request recieved at endpoint /users
+2022-07-04 17:39:44 INFO  UserController:36 - GET request recieved at endpoint /users
+2022-07-04 17:42:08 INFO  UserController:36 - GET request recieved at endpoint /users
+2022-07-04 17:45:55 INFO  UserController:36 - GET request recieved at endpoint /users
+2022-07-04 19:41:06 INFO  UserController:28 - Session Attribute Set for User dev.rowand.models.User@34861e3d
+2022-07-04 19:53:49 INFO  UserController:28 - Session Attribute Set for User dev.rowand.models.User@34d8932c
+2022-07-04 19:54:16 INFO  UserController:28 - Session Attribute Set for User dev.rowand.models.User@74494e49
+2022-07-04 19:55:13 INFO  UserController:28 - Session Attribute Set for User dev.rowand.models.User@3915c384
+2022-07-04 20:14:33 INFO  UserController:28 - Session Attribute Set for User dev.rowand.models.User@131fd047
+2022-07-04 22:16:56 INFO  UserController:36 - GET request recieved at endpoint /users
+2022-07-04 22:47:15 INFO  UserController:36 - GET request recieved at endpoint /users
+2022-07-05 00:15:19 INFO  UserController:36 - GET request recieved at endpoint /users
+2022-07-05 00:26:37 INFO  UserController:36 - GET request recieved at endpoint /users
+2022-07-05 01:55:33 INFO  UserController:36 - GET request recieved at endpoint /users
+2022-07-05 02:04:45 INFO  UserController:62 - PATCH request recieved at endpoint /employees/{empid}/{reId}
+2022-07-05 02:05:33 INFO  UserController:62 - PATCH request recieved at endpoint /employees/{empid}/{reId}
+2022-07-05 02:05:56 INFO  UserController:37 - GET request recieved at endpoint /employees or /financeManagers
+2022-07-05 02:17:52 INFO  UserController:62 - PATCH request recieved at endpoint /employees/{empid}/{reId}
+2022-07-05 02:18:01 INFO  UserController:37 - GET request recieved at endpoint /employees or /financeManagers
+2022-07-05 02:18:57 INFO  UserController:62 - PATCH request recieved at endpoint /employees/{empid}/{reId}
+2022-07-05 02:19:12 INFO  UserController:37 - GET request recieved at endpoint /employees or /financeManagers
+2022-07-05 09:03:22 INFO  UserController:28 - Session Attribute Set for User dev.rowand.models.User@37e9af3e
+2022-07-05 09:03:41 INFO  UserController:37 - GET request recieved at endpoint /employees or /financeManagers
+2022-07-05 09:06:24 INFO  UserController:37 - GET request recieved at endpoint /employees or /financeManagers
+2022-07-05 09:14:48 INFO  UserController:37 - GET request recieved at endpoint /employees or /financeManagers
+2022-07-05 09:26:11 INFO  UserController:29 - PATCH request recieved at endpoint /employees/{empid}
+2022-07-05 09:28:08 INFO  UserController:29 - PATCH request recieved at endpoint /employees/{empid}
+2022-07-05 09:32:10 INFO  UserController:37 - GET request recieved at endpoint /employees or /financeManagers
+2022-07-05 09:33:41 INFO  UserController:62 - PATCH request recieved at endpoint /employees/{empid}/{reId}
+2022-07-05 09:33:59 INFO  UserController:62 - PATCH request recieved at endpoint /employees/{empid}/{reId}
+2022-07-05 09:35:39 INFO  UserController:37 - GET request recieved at endpoint /employees or /financeManagers
+2022-07-05 09:36:05 INFO  UserController:37 - GET request recieved at endpoint /employees or /financeManagers
+2022-07-05 09:38:11 INFO  UserController:28 - Session Attribute Set for User dev.rowand.models.User@2180683a
+2022-07-05 09:38:19 INFO  UserController:37 - GET request recieved at endpoint /employees or /financeManagers
+2022-07-05 09:58:51 INFO  UserController:47 - PATCH request recieved at endpoint /financeManagers/{id}/{reimId}
+2022-07-05 09:59:04 INFO  UserController:37 - GET request recieved at endpoint /employees or /financeManagers
+2022-07-05 09:59:42 INFO  UserController:47 - PATCH request recieved at endpoint /financeManagers/{id}/{reimId}
+2022-07-05 09:59:52 INFO  UserController:37 - GET request recieved at endpoint /employees or /financeManagers
+2022-07-05 10:03:03 INFO  UserController:28 - Session Attribute Set for User dev.rowand.models.User@37b1b850
+2022-07-05 10:04:25 INFO  UserController:47 - PATCH request recieved at endpoint /financeManagers/{id}/{reimId}
+2022-07-05 10:04:36 INFO  UserController:37 - GET request recieved at endpoint /employees or /financeManagers
+2022-07-05 10:05:02 INFO  UserController:47 - PATCH request recieved at endpoint /financeManagers/{id}/{reimId}
+2022-07-05 10:05:32 INFO  UserController:37 - GET request recieved at endpoint /employees or /financeManagers
+2022-07-05 10:05:58 INFO  UserController:47 - PATCH request recieved at endpoint /financeManagers/{id}/{reimId}
+2022-07-05 10:06:05 INFO  UserController:37 - GET request recieved at endpoint /employees or /financeManagers
+2022-07-05 10:06:32 INFO  UserController:47 - PATCH request recieved at endpoint /financeManagers/{id}/{reimId}
+2022-07-05 10:06:37 INFO  UserController:37 - GET request recieved at endpoint /employees or /financeManagers
+2022-07-05 10:06:51 INFO  UserController:28 - Session Attribute Set for User dev.rowand.models.User@6866cd27
+2022-07-05 12:56:11 INFO  UserController:37 - GET request recieved at endpoint /employees or /financeManagers
+2022-07-05 12:57:36 INFO  UserController:37 - GET request recieved at endpoint /employees or /financeManagers
+2022-07-05 13:30:41 INFO  UserController:28 - Session Attribute Set for User null
+2022-07-05 13:30:47 INFO  UserController:28 - Session Attribute Set for User null
+2022-07-05 13:30:47 INFO  UserController:28 - Session Attribute Set for User null
+2022-07-05 13:31:16 INFO  UserController:28 - Session Attribute Set for User dev.rowand.models.User@7be15e37
+2022-07-05 13:31:37 INFO  UserController:28 - Session Attribute Set for User dev.rowand.models.User@1ddf6494
+2022-07-05 13:32:02 INFO  UserController:28 - Session Attribute Set for User dev.rowand.models.User@59dd0cd
+2022-07-05 13:33:01 INFO  UserController:29 - POST request recieved at endpoint /employees/{empid}
+2022-07-05 13:33:11 INFO  UserController:37 - GET request recieved at endpoint /employees or /financeManagers
+2022-07-05 13:33:41 INFO  UserController:37 - GET request recieved at endpoint /employees or /financeManagers
+2022-07-05 13:33:55 INFO  UserController:62 - PATCH request recieved at endpoint /employees/{empid}/{reId}
+2022-07-05 13:34:01 INFO  UserController:37 - GET request recieved at endpoint /employees or /financeManagers
+2022-07-05 13:34:17 INFO  UserController:28 - Session Attribute Set for User dev.rowand.models.User@232d1e94
+2022-07-05 13:34:20 INFO  UserController:37 - GET request recieved at endpoint /employees or /financeManagers
+2022-07-05 13:34:43 INFO  UserController:47 - PATCH request recieved at endpoint /financeManagers/{id}/{reimId}
+2022-07-05 13:34:48 INFO  UserController:37 - GET request recieved at endpoint /employees or /financeManagers
+2022-07-05 13:35:03 INFO  UserController:37 - GET request recieved at endpoint /employees or /financeManagers
+2022-07-05 13:35:11 INFO  UserController:28 - Session Attribute Set for User dev.rowand.models.User@1f363e9b

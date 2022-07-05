@@ -2,6 +2,7 @@ package dev.rowand.models;
 
 public class Form {
 private int id;
+private int reim_id;
 private String formDate;
 private String formTime;
 private String formLocation;
@@ -9,7 +10,8 @@ private String description;
 
 private float reimburse_rate;
 private float cost;
-private String gradingFormat;
+private String gradingFormat; //Employee should be able to add grade or presentation at a later time
+//add a patch request or something to allow for this
 private String typeOfEvent;
 private String justification;
 private String status;
@@ -17,10 +19,11 @@ private String status;
 
 
 public Form() {}
-public Form(int id, String formDate, String formTime, String formLocation, String description,
+public Form(int id, int reim_id, String formDate, String formTime, String formLocation, String description,
 		float reimburse_rate, float cost, String gradingFormat, String typeOfEvent, String justification, String status) {
 	super();
 	this.id = id;
+	this.reim_id = reim_id;
 	this.formDate = formDate;
 	this.formTime = formTime;
 	this.formLocation = formLocation;
@@ -98,6 +101,12 @@ public String getStatus() {
 }
 public void setStatus(String status) {
 	this.status = status;
+}
+public int getReim_id() {
+	return reim_id;
+}
+public void setReim_id(int reim_id) {
+	this.reim_id = reim_id;
 }
 
 

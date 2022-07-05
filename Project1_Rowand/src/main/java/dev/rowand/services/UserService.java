@@ -28,5 +28,14 @@ public class UserService {
 		}
 		return null;
 	}
+	
+	public User getUserById(int id) throws Exception {
+		User u = userDao.getUserByID(id);
+		if (u == null) {
+			throw new Exception ("Account not found!");
+
+		}
+		return u;
+	}
 
 }

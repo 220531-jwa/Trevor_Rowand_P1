@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Creation</title>
+    <link rel="stylesheet" href="./frontEndStyle.css"/>
+<style>
+    .form-control{
+        text-align: center;
+        width: 100px;
+    }
+    #select{
+        text-align: center;
+        width: 100px;
+    }
+</style>
+</head>
+<body>
+    <h1>
+        Reimbursement Request Creation
+    </h1>
+    <div class="container">
+        <textarea id="reim_id"class="form-control" placeholder="ID of Employee"></textarea>
+    </br>
+        <textarea id="formDate"class="form-control" placeholder="Date of Submission"></textarea>
+    </br>
+        <textarea id="formTime"class="form-control" placeholder="Time of Submission"></textarea>
+    </br>
+        <textarea id="formLocal"class="form-control" placeholder="Place of Residence"></textarea>
+    </br>
+        <textarea id="descript"class="form-control" placeholder="Description"></textarea>
+    </br>
+        <textarea id="Cost"class="form-control" placeholder="Amount Requested"></textarea>
+    </br>
+        <select id="select" class="reviewText">
+            <option selected>What type of Reimbursement is it?</option>
+            <option value="1">University Course</option>
+            <option value="2">Seminar</option>
+            <option value="3">Certification Preparation</option>
+            <option value="4">Classes</option>
+            <option value="5">Certification</option>
+            <option value="6">Technical Training</option>
+            <option value="7">Other</option>
+        </select>
+    </br>
+        <textarea id="Justification"class="form-control" placeholder="Justification"></textarea>
+    </br>  
+        <button class="btn btn-secondary" type="button" onclick="submitForm()">Submit</button>
+    </div>
+    <script src="./financeScript.js"></script>
+</body>
+</html>

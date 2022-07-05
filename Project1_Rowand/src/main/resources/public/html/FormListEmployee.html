@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Request List</title>
+    <link rel="stylesheet" href="./frontEndStyle.css"/>
+    <style>
+        #myData{
+            color: white;
+            text-align: left;
+        }
+        label{
+            color: white;
+            font: italic;
+            text-align: center;
+        }
+        #getData{
+            text-align: center;
+        }
+    </style>
+    <script src = "financeScript.js"></script>
+</head>
+<body>
+    <h1>
+        Your Reimbursement Requests
+    </h1>
+</br>
+
+    <label>
+        Employee ID:
+    </br>
+        <input class="form-control" id="empID" type="text" placeholder="ID">
+    </label>
+
+    <button id="getData" type="button" onclick="getDataEmployee()">Get List</button>
+
+    <div id="myData"></div>
+    
+</body>
+</html>

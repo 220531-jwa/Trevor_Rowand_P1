@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Status</title>
+    <link rel="stylesheet" href="./frontEndStyle.css"/>
+<style>
+    label{
+        color: white;
+        font: italic;
+        text-align: center;
+    }
+    #butt{
+        text-align: center;
+    }
+    #AcceptOrReject{
+        text-align: center;
+    }
+    #request{
+        text-align: center;
+        width: 100px;
+    }
+
+</style>
+</head>
+<body>
+    <h1>
+       Update Request Status
+    </h1>
+</br>
+    <div>
+        <label>
+            Reimbursement Request ID:
+        </br>
+            <input id="request" class="form-control" type="text" placeholder="ID">
+        </label>
+    </br>
+    <label>
+        User ID:
+    </br>
+        <input id="userReq" class="form-control" type="text" placeholder="ID">
+    </label>
+</br>
+        <textarea id="AcceptOrReject"class="form-control" placeholder="Accept or Reject?"></textarea>
+    </br>
+        <button id="butt" type="button btn-primary" onclick="changeStatus()">Submit</button> <!-- Chagne login to a new fucntion for for acceptOrreject-->
+
+    </div>
+
+    <script src = "financeScript.js"></script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grading Format or Presentation Creation</title>
+    <link rel="stylesheet" href="./frontEndStyle.css"/>
+<style>
+    label{
+        color:white;
+        text-align: center;
+    }
+    #request{
+        text-align: center;
+        width: 100px;
+
+    }
+    #gradeOrPres{
+        text-align: center;
+    }
+    #butt{
+        text-align: center;
+    }
+</style>
+</head>
+<body>
+    <h1>
+        Grade / Presentation Creation
+    </h1>
+    <div>
+        <label>
+            Reimbursement Request ID:
+        </br>
+            <input id="request" type="text" placeholder="Request ID">
+        </label>
+    </br>
+    <label>
+        User ID:
+    </br>
+        <input id="userReq" type="text" placeholder="User ID">
+    </label>
+</br>
+        <textarea id="gradeOrPres"class="form-control" placeholder="Grading Format or Presentation"></textarea>
+    </br>
+        <button id="butt" type="button btn-primary" onclick="AddGradeorPres()">Submit</button> <!-- Chagne login to a new fucntion for for acceptOrreject-->
+    </div>
+
+
+    <script src = "financeScript.js"></script>
+</body>
+</html>

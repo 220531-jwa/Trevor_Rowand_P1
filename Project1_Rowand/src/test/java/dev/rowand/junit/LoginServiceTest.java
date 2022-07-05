@@ -34,7 +34,7 @@ public class LoginServiceTest { //how to improve coverage?
 	
 	@Test
 	public void should_Login() {
-		User usersMock = new User("username", 1, "pass", "Fname", "Lname", 1, 750.0f, "type");
+		User usersMock = new User("username", 1, "pass", "Fname", "Lname", 1000, "type");
 		when(mockUserDao.getUserByUsername(anyString())).thenReturn(usersMock);
 		
 		User loggedInUser = userService.loginUser("username", "pass");
@@ -53,7 +53,7 @@ public class LoginServiceTest { //how to improve coverage?
 	
 	@Test
 	public void LoginWithValidUsernameButInvalidPassShouldBeNull() {
-		User usersMock = new User("username", 1, "pass", "Fname", "Lname", 1, 1000, "type");
+		User usersMock = new User("username", 1, "pass", "Fname", "Lname", 1000, "type");
 		when(mockUserDao.getUserByUsername(anyString())).thenReturn(usersMock);
 		
 		User loggedInUser = userService.loginUser("username", "pa$$word");

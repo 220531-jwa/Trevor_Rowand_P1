@@ -9,6 +9,7 @@ import static io.javalin.apibuilder.ApiBuilder.put;
 
 import dev.rowand.controllers.FormController;
 import dev.rowand.controllers.UserController;
+import dev.rowand.models.User;
 import dev.rowand.repositories.FormDAO;
 import dev.rowand.repositories.UserDAO;
 import dev.rowand.services.FormService;
@@ -22,10 +23,11 @@ public class AppDriver {
 	public static void main(String[] args) {
 		
 		//switch out the finance manager and employee tables for a single user talbe; we'll use paths and something else to get it all later
-		FormController fc = new FormController(new FormService(new FormDAO()));
+		FormController fc = new FormController(new FormService(new FormDAO(), new UserDAO()), new UserService(new UserDAO()));
 		UserController uc = new UserController(new UserService(new UserDAO()));
+		boolean tf;
 		Javalin app = Javalin.create(config ->{
-			config.addStaticFiles("/public", Location.CLASSPATH);
+			config.addStaticFiles("/public/html", Location.CLASSPATH);
 			
 		});
 		
@@ -35,19 +37,43 @@ public class AppDriver {
 			path("/login", () ->{
 				post(uc::loginUser);
 			});
-			path("/employees", () ->{
-				post(fc::reimburseRequest);
-				get(fc::getAllRequests);
-				//patch(fc::addGradeOrPres);
+			path("/getSession", () ->{
+				get(ctx -> {
+					User loggedInUser = ctx.sessionAttribute("loggedInUser");
+					System.out.println(loggedInUser);
+					String storType = loggedInUser.getType();
+
+				});
 			});
+			path("/logout", () -> {
+				delete(ctx -> {
+					// invalidating session so loggedInUser is null
+					ctx.req.getSession(false).invalidate();
+				});
+			});
+		path("/employees", () ->{
+				get(fc::getAllRequests);
+				path("/{empid}", () ->{
+				//patch(fc::addGradeOrPres);
+				post(fc::reimburseRequest);
+				path("/{reId}", () ->{
+					patch(fc::AddGradeorPres);
+				});
+
+				});
+			}); 
 			path("/financeManagers", () ->{
 				get(fc::getAllRequests);
 				//patch(fc::updateReimburseStat); //also should add some ids for these paths
 				path("/{id}", () ->{
-					patch(fc::updateStatus); //guessing about approve or rejsct requests
-					 //maybe add a boolean to the forms? 
+					
+					path("/{reimId}", () -> {
+						patch(fc::updateStatus); //guessing about approve or rejsct requests
+						 //maybe add a boolean to the forms? 
+					});
+					
 				});
-			});
+			}); 
 		});
 	}
 }

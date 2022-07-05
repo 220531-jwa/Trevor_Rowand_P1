@@ -1,4 +1,4 @@
-package dev.rowand.pages;
+/*package dev.rowand.pages;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -17,6 +17,6 @@ public class LoginPage {
 	@FindBy(id = "pass")
 	public WebElement passwordInput;
 	
-	@FindBy(id = "/html/body/div/button")
+	@FindBy(xpath = "/html/body/div/button")
 	public WebElement loginButton;
-}
+} */

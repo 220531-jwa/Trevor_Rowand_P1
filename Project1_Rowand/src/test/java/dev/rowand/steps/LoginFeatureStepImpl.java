@@ -1,4 +1,4 @@
-package dev.rowand.steps;
+/*package dev.rowand.steps;
 
 import java.time.Duration;
 
@@ -18,7 +18,7 @@ private LoginPage loginPage = LoginRunner.LoginPage;
 
 @Given("a User is on the LoginPage")
 public void a_user_is_on_the_login_page(){
-	driver.get("http://localhost:8080/loginPage.html");
+	driver.get("http://localhost:8080/LoginP1.html");
 	
 }
 
@@ -34,8 +34,8 @@ loginPage.loginButton.click();;
 public void the_user_should_be_on_the_home_page(){
 	
 	//we need to incorporate a WAIT here...
-	new WebDriverWait(driver, Duration.ofSeconds(5))
+	new WebDriverWait(driver, Duration.ofSeconds(30))
 	.until(ExpectedConditions.titleContains("Home Page"));
 	
 }
-}
+} */

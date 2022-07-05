@@ -6,19 +6,17 @@ public class User {
 	private String password;
 	private String first_name;
 	private String last_name;
-	private int reim_id;
 	private float reimburse = 1000; //move to the user project
 	private String type;
 
 	public User() {}
-	public User(String username, int id, String password, String first_name, String last_name, int reim_id, float reimburse,
+	public User(String username, int id, String password, String first_name, String last_name, float reimburse,
 			String type) {
 		this.username = username;
 		this.id = id;
 		this.password = password;
 		this.first_name = first_name;
 		this.last_name = last_name;
-		this.reim_id = reim_id;
 		this.reimburse = reimburse;
 		this.type = type;
 	}
@@ -53,12 +51,6 @@ public class User {
 	}
 	public void setLast_name(String last_name) {
 		this.last_name = last_name;
-	}
-	public int getReim_id() {
-		return reim_id;
-	}
-	public void setReim_id(int reim_id) {
-		this.reim_id = reim_id;
 	}
 
 	public String getType() {

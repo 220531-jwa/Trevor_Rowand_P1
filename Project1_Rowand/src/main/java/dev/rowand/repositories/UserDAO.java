@@ -29,7 +29,6 @@ String sql = "select * from users where username = ?";
 						rs.getString("pass"),
 						rs.getString("first_name"),
 						rs.getString("last_name"),
-						rs.getInt("reim_id"),
 						rs.getFloat("reimburse"),
 						rs.getString("type")
 						
@@ -43,13 +42,13 @@ String sql = "select * from users where username = ?";
 	}
 
 
-public User getUserByReimburseID(int reim_id) {
+public User getUserByID(int id) {
 	// TODO Auto-generated method stub
-String sql = "select * from users where reim_id = ?";
+String sql = "select * from users where id = ?";
 	
 	try (Connection conn = cu.getConnection()) {
 		PreparedStatement ps = conn.prepareStatement(sql);
-		ps.setInt(1, reim_id);
+		ps.setInt(1, id);
 		
 		ResultSet rs = ps.executeQuery();
 		
@@ -60,7 +59,6 @@ String sql = "select * from users where reim_id = ?";
 					rs.getString("pass"),
 					rs.getString("first_name"),
 					rs.getString("last_name"),
-					rs.getInt("reim_id"),
 					rs.getFloat("reimburse"),
 					rs.getString("type")
 					
@@ -73,4 +71,22 @@ String sql = "select * from users where reim_id = ?";
 	return null;
 }
 
+
+public void updateReimburse(float remainder, int user_id) {
+	// TODO Auto-generated method stub
+	String sql = "update Users set reimburse = ? where id = ?";
+	
+	try(Connection conn = cu.getConnection()){ 
+		PreparedStatement ps = conn.prepareStatement(sql);
+		ps.setFloat(1, remainder);
+		ps.setInt(2, user_id);
+		ps.executeUpdate();
+		
+	} catch(SQLException e) {
+		e.printStackTrace();
+	}
+	}
+	
 }
+
+
